@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url(./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(275, 100%, 97%);
+  font-family: "WorkSans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 50%;
+  margin: 15% 25%;
+  background-color: hsl(0, 0%, 100%);
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+}
+
+h1 {
+  margin: 10px 20px;
+  font-family: "WorkSans-Regular";
+  font-weight: 900;
+}
+
+.container {
+  margin: 15px;
+}
+
+h3 {
+  font-size: 14px;
+  font-family: "WorkSans-SemiBold";
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+h3:hover {
+  color: hsl(293, 62%, 63%);
+  cursor: pointer;
+}
+
+p {
+  font-size: 12px;
+  color: hsl(292, 16%, 49%);
+}
+
+.none {
+  display: none;
+}
+
+.h3container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
