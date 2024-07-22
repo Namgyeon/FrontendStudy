@@ -19,19 +19,22 @@ body {
 }
 
 .container {
-  width: 45%;
+  width: 60%;
   height: 60%;
   display: flex;
+  border-radius: 15px;
 }
 
 img {
   flex: 1;
+  border-radius: 15px 0 0 15px;
 }
 
 .intro {
   flex: 1;
   padding: 20px;
   background-color: white;
+  border-radius: 0 15px 15px 0;
 }
 
 #category {
@@ -46,11 +49,12 @@ img {
 }
 
 #text {
-  margin: 10px 0;
+  margin-top: 10px;
   color: hsl(228, 12%, 48%);
 }
 
 .priceBox {
+  margin-top: 20px;
   width: 70%;
   display: flex;
   align-items: center;
@@ -59,7 +63,6 @@ img {
 }
 
 #afterPrice {
-  margin: 20px 0;
   font-family: "Fraunces";
   font-weight: 700;
   font-size: 30px;
@@ -73,7 +76,7 @@ img {
 button {
   width: 80%;
   height: 12%;
-  margin: 0 10%;
+  margin: 10px 10%;
   background-color: hsl(158, 36%, 37%);
   color: white;
   text-align: center;
@@ -81,7 +84,104 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+button:hover {
+  background-color: hsl(212, 21%, 14%);
+}
 
 #cart {
   margin: 0 10px;
+}
+
+@media (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+    margin: 0;
+  }
+
+  .container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+
+  img {
+    flex: 1;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .intro {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+  }
+
+  #category {
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 10px;
+  }
+
+  .intro h1 {
+    margin: 10px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+
+  #text {
+    margin-top: 10px;
+    color: hsl(228, 12%, 48%);
+  }
+
+  .priceBox {
+    margin-top: 10px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  #afterPrice {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+  }
+
+  #beforePrice {
+    text-decoration: line-through;
+  }
+
+  button {
+    width: 80%;
+    height: 12%;
+    margin: 10px 10%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: hsl(212, 21%, 14%);
+  }
+
+  #cart {
+    margin: 0 10px;
+  }
 }
