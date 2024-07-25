@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+}
+
+.container {
+  width: 30%;
+  height: 80%;
+  padding: 16px;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+  color: white;
+}
+
+#equil {
+  width: 100%;
+  height: 60%;
+  border-radius: 15px;
+}
+
+#tag {
+  margin: 15px 0;
+  color: white;
+}
+
+#describe {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: hsl(215, 51%, 70%);
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.miniBox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+#price {
+  font-size: 14px;
+  color: hsl(178, 100%, 50%);
+}
+
+#date {
+  font-size: 14px;
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  margin: 10px 0;
+}
+
+.box2 {
+  display: flex;
+  gap: 10px;
+}
+
+#avatar {
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(215, 51%, 70%);
+  border-radius: 50%;
+}
+
+#name {
+  color: white;
+}
