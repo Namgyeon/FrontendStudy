@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -30,26 +29,30 @@
   </head>
   <body>
     <div class="container">
-      <img id="equil" src="./images/image-equilibrium.jpg" alt="큐브이미지">
-    <p id="tag">Equilibrium #3429</p>
-
-    <p id="describe">Our Equilibrium collection promotes balance and calm.</p>
-    <div class="box">
-      <div class="miniBox">
-        <img src="./images/icon-ethereum.svg" alt="이더리움이미지" />
-        <p id="price">0.041 ETH</p>
+      <div class="imgBox">
+        <img id="equil" src="./images/image-equilibrium.jpg" alt="큐브이미지" />
+        <div class="viewBox">
+          <img id="view" src="./images/icon-view.svg" alt="보기 아이콘" />
+        </div>
       </div>
-      <div class="miniBox">
-        <img src="./images/icon-clock.svg" alt="시계이미지" />
-        <p id="date">3 days left</p>
+      <p id="tag">Equilibrium #3429</p>
+      <p id="describe">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="box">
+        <div class="miniBox">
+          <img src="./images/icon-ethereum.svg" alt="이더리움이미지" />
+          <p id="price">0.041 ETH</p>
+        </div>
+        <div class="miniBox">
+          <img src="./images/icon-clock.svg" alt="시계이미지" />
+          <p id="date">3 days left</p>
+        </div>
+      </div>
+      <hr />
+      <div class="box2">
+        <img id="avatar" src="./images/image-avatar.png" alt="아바타이미지" />
+        <p>Creation of <span id="name">Jules Wyvern</span></p>
       </div>
     </div>
-    <hr>
-    <div class="box2">
-      <img id="avatar" src="./images/image-avatar.png" alt="아바타이미지">
-      <p>Creation of <p id="name">Jules Wyvern</p></p>
-    </div>
-    </div>
-
+    <script src="./index.js"></script>
   </body>
 </html>
