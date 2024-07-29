@@ -80,3 +80,86 @@ span {
   mix-blend-mode: overlay;
   z-index: 1;
 }
+
+@media (max-width: 375px) {
+  .container {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .des {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: hsl(244, 38%, 16%);
+  }
+
+  span {
+    color: hsl(277, 64%, 61%);
+  }
+
+  #main {
+    margin: 15px 0;
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: center;
+  }
+
+  .box {
+    margin: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .miniBox {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .num {
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+  }
+
+  .things {
+    margin-top: 0;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .imgBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  #img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .imgBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(277, 64%, 61%);
+    opacity: 1;
+    mix-blend-mode: overlay;
+    z-index: 1;
+  }
+}
