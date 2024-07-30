@@ -63,9 +63,28 @@ button {
   cursor: pointer;
 }
 
+#btn1:hover {
+  border: 2px solid white;
+  background-color: hsl(31, 77%, 52%);
+}
+
+#btn2:hover {
+  border: 2px solid white;
+  background-color: hsl(184, 100%, 22%);
+}
+
+#btn3:hover {
+  border: 2px solid white;
+  background-color: hsl(179, 100%, 13%);
+}
+
 #a1 {
   text-decoration: none;
   color: hsl(31, 77%, 52%);
+}
+
+#a1:hover {
+  color: white;
 }
 
 #a2 {
@@ -73,7 +92,119 @@ button {
   color: hsl(184, 100%, 22%);
 }
 
+#a2:hover {
+  color: white;
+}
+
 #a3 {
   text-decoration: none;
   color: hsl(179, 100%, 13%);
+}
+
+#a3:hover {
+  color: white;
+}
+
+@media (max-width: 375px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Lexend Deca", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    margin: 15px 0;
+  }
+
+  .box1 {
+    flex: 1;
+    background-color: hsl(31, 77%, 52%);
+    padding: 30px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .box2 {
+    flex: 1;
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px;
+  }
+
+  .box3 {
+    flex: 1;
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  h1 {
+    margin: 20px 0;
+    font-family: "Big Shoulders Display", sans-serif;
+    color: hsl(0, 0%, 95%);
+  }
+
+  p {
+    margin-bottom: 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  button {
+    width: 60%;
+    height: 10%;
+    margin-top: 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #btn1:hover {
+    border: 2px solid white;
+    background-color: hsl(31, 77%, 52%);
+  }
+
+  #btn2:hover {
+    border: 2px solid white;
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  #btn3:hover {
+    border: 2px solid white;
+    background-color: hsl(179, 100%, 13%);
+  }
+
+  #a1 {
+    text-decoration: none;
+    color: hsl(31, 77%, 52%);
+  }
+
+  #a1:hover {
+    color: white;
+  }
+
+  #a2 {
+    text-decoration: none;
+    color: hsl(184, 100%, 22%);
+  }
+
+  #a2:hover {
+    color: white;
+  }
+
+  #a3 {
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+  }
+
+  #a3:hover {
+    color: white;
+  }
 }
