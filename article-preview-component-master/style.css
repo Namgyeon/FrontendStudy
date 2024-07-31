@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  width: 60%;
+  height: 40%;
+  display: flex;
+}
+
+#draw {
+  width: 40%;
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+}
+
+h2 {
+  font-size: 18px;
+  color: hsl(217, 19%, 35%);
+}
+
+p {
+  margin: 10px 0;
+  font-size: 12px;
+  color: hsl(214, 17%, 51%);
+}
+
+.miniBox {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+#name {
+  margin: 0;
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+#date {
+  margin: 0;
+}
+
+#share {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+#shareImg {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+}
