@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: 90%;
+  display: grid;
+  grid-template-areas:
+    "a a a"
+    "b c d"
+    "b e d";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.headerBox {
+  grid-area: a;
+  text-align: center;
+}
+
+#fstHeader {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+
+#secHeader {
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  margin: 15px 0;
+  font-size: 14px;
+  color: hsl(229, 6%, 66%);
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 3px 3px 3px hsl(230, 11%, 79%);
+  position: relative;
+}
+
+h3 {
+  color: hsl(234, 12%, 34%);
+}
+
+.green {
+  height: 50%;
+  grid-area: b;
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.red {
+  grid-area: c;
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.blue {
+  height: 50%;
+  grid-area: d;
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.yellow {
+  grid-area: e;
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 90%;
+    height: auto;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .headerBox {
+    margin-top: 100px;
+    padding: 80px 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    width: 300px;
+    height: 180px;
+    padding: 10px 20px;
+    box-shadow: 0 3px 3px 3px hsl(230, 11%, 79%);
+    position: relative;
+  }
+
+  h3 {
+    color: hsl(234, 12%, 34%);
+  }
+
+  .green {
+    grid-area: b;
+    border-top: 4px solid hsl(180, 62%, 55%);
+  }
+
+  .red {
+    grid-area: c;
+    border-top: 4px solid hsl(0, 78%, 62%);
+  }
+
+  .blue {
+    grid-area: d;
+    border-top: 4px solid hsl(212, 86%, 64%);
+  }
+
+  .yellow {
+    grid-area: e;
+    border-top: 4px solid hsl(34, 97%, 64%);
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    bottom: 20px;
+    position: absolute;
+  }
+}
