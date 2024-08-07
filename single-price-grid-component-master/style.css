@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60%;
+  height: 60%;
+  display: grid;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box3";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.box1 {
+  grid-area: box1;
+  border: 3px solid black;
+  padding: 2rem;
+  background-color: white;
+}
+
+#box1-header {
+  margin: 1rem 0;
+  color: hsl(179, 62%, 43%);
+}
+
+#p1 {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  color: hsl(71, 73%, 54%);
+}
+
+p {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: hsl(218, 22%, 67%);
+}
+
+.box2 {
+  grid-area: box2;
+  border: 3px solid black;
+  padding: 2rem;
+  background-color: hsl(179, 62%, 43%);
+}
+
+#box2-header {
+  color: white;
+}
+
+#box2-price {
+  font-size: 2.5rem;
+}
+.box3 {
+  grid-area: box3;
+  border: 3px solid black;
+  padding: 2rem;
+  background-color: hsl(179, 65%, 51%);
+}
