@@ -77,12 +77,20 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.inputBox {
+  width: 80%;
+  height: 20%;
+  margin: 2rem 0;
+  border: none;
+  position: relative;
 }
 
 input {
-  width: 45rem;
-  height: 4rem;
-  margin: 2rem 0;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   border: 3px solid hsl(246, 25%, 77%);
 }
@@ -91,10 +99,24 @@ input::placeholder {
   padding-left: 20px;
 }
 
+form.was-vaildated input:invalid {
+  border-color: rgb(246, 94, 94);
+}
+
+.error {
+  display: none;
+  position: absolute;
+  bottom: 50%;
+  transform: translate(-50%, 0);
+}
+
 #submit {
+  width: 80%;
+  height: 20%;
   border: none;
   background-color: hsl(154, 59%, 51%);
   color: white;
+  cursor: pointer;
 }
 
 #post {
@@ -103,4 +125,44 @@ input::placeholder {
 
 #post2 {
   color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textBox {
+    text-align: center;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  .loginBox {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .eventAlarm {
+    width: 80%;
+    height: 10%;
+    margin: 20px auto;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .createBox {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
 }
