@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#header {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+#header span {
+  color: hsl(0, 0%, 59%);
+}
+
+#content {
+  font-size: 1.4rem;
+}
+
+.formBox {
+  margin: 2rem 0;
+  position: relative;
+}
+
+#email {
+  width: 40rem;
+  height: 5rem;
+  padding-left: 40px;
+  border: 2px solid hsl(0, 0%, 59%);
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+#email:invalid {
+  border-color: red;
+}
+
+#submit {
+  margin: 0 10px;
+  width: 14rem;
+  height: 5rem;
+  border-radius: 15px;
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  cursor: pointer;
+}
+
+#submit:active {
+  opacity: 0.7;
+}
+
+#error-message {
+  margin: 5px 0;
+  position: absolute;
+  left: 20px;
+  color: red;
+  display: none;
+}
+
+#dashImg {
+  margin: 20px 0;
+  width: 70rem;
+  height: 40rem;
+  object-fit: cover;
+}
+
+@media (max-width: 375px) {
+  .formBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #email {
+    margin-bottom: 10px;
+    width: 30rem;
+    height: 4rem;
+  }
+
+  #submit {
+    margin: 0;
+    width: 30rem;
+    height: 4rem;
+  }
+
+  #dashImg {
+    width: 30rem;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  #error-message {
+    position: absolute;
+    left: 6rem;
+    bottom: 3rem;
+  }
+}
