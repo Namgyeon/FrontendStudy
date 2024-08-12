@@ -63,6 +63,68 @@ body {
   cursor: pointer;
 }
 
+.quantitySelector {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(14, 86%, 42%);
+  border-radius: 20px;
+}
+
+.plus {
+  margin-right: 10px;
+  background-color: hsl(14, 86%, 42%);
+  border: none;
+}
+
+.plus-img {
+  width: 18px;
+  height: 18px;
+  padding: 2px;
+  background-color: hsl(14, 86%, 42%);
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.plus-img:hover {
+  background-color: black;
+  filter: invert();
+}
+
+.minus {
+  margin-left: 10px;
+  background-color: hsl(14, 86%, 42%);
+  border: none;
+}
+
+.minus-img {
+  width: 18px;
+  height: 18px;
+  padding: 2px;
+  background-color: hsl(14, 86%, 42%);
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.minus-img:hover {
+  background-color: black;
+  filter: invert();
+}
+
+.num {
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
 .cate {
   margin-top: 15px;
   color: hsl(7, 20%, 60%);
