@@ -153,6 +153,25 @@ body {
   color: hsl(12, 20%, 44%);
 }
 
+.itemBox1 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemBox2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemBox3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media (max-width: 375px) {
   body {
     width: 100%;

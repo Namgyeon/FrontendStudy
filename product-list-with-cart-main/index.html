@@ -107,7 +107,7 @@
             </div>
           </div>
           <p class="cate">Cream Brulee</p>
-          <p class="name">Vanilla Bean Crème Brûlée Crème Brûlée</p>
+          <p class="name">Vanilla Bean Crème Brûlée</p>
           <p class="price">$7.00</p>
         </div>
         <div class="item">
@@ -373,13 +373,16 @@
     </div>
 
     <div class="container2">
-      <h2 id="quantity">Your Cart (0)</h2>
-      <img
-        id="empty-cart-img"
-        src="./assets/images/illustration-empty-cart.svg"
-        alt=""
-      />
-      <p id="post">Your added items will appear here</p>
+      <h2 id="quantity">Your Cart <span id="orderNum">(0)</span></h2>
+      <div class="orderContainer">
+        <img
+          id="empty-cart-img"
+          src="./assets/images/illustration-empty-cart.svg"
+          alt=""
+        />
+        <p id="post">Your added items will appear here</p>
+      </div>
+      <div class="orderContainer2"></div>
     </div>
     <script src="./index.js"></script>
   </body>
