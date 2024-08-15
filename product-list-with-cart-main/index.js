@@ -32,7 +32,7 @@ plusButtons.forEach((button) => {
 
 // Add to Cart 이벤트 변수
 const addCartBtns = document.querySelectorAll(".addCart");
-
+const orderContainer = document.querySelector(".orderContainer");
 // Add to Cart 클릭시 버튼 전환
 addCartBtns.forEach((addCartBtn) => {
   addCartBtn.addEventListener("click", (event) => {
@@ -44,10 +44,7 @@ addCartBtns.forEach((addCartBtn) => {
   });
 });
 
-// container2 orderContainer
-const orderContainer = document.querySelector(".orderContainer");
 const orderContainer2 = document.querySelector(".orderContainer2");
-
 // Add to Cart 버튼눌렀을때 Your Cart로 상품 옮기는 함수
 addCartBtns.forEach((addCartBtn) => {
   addCartBtn.addEventListener("click", (event) => {
@@ -69,12 +66,13 @@ addCartBtns.forEach((addCartBtn) => {
     p2.setAttribute("class", "itemNum");
     p3.setAttribute("class", "itemPrice");
 
-    // orderContainer2에 이미 orderName이 존재하면 작동안한다.
-    const orderNames = orderContainer2.querySelectorAll(".itemBox1");
+    //중복 확인하는 로직
     let duplicate = false;
-    orderNames.forEach((name) => {
-      name === orderName.textContent;
-      duplicate = true;
+    const orederContainer2_lists = orderContainer2.querySelectorAll(
+      ".itemBox1 .itemName"
+    );
+    orederContainer2_lists.forEach((list) => {
+      if (list.textContent === orderName.textContent) duplicate = true;
     });
     // 중복 확인
     if (!duplicate) {
@@ -91,3 +89,5 @@ addCartBtns.forEach((addCartBtn) => {
     }
   });
 });
+
+//플러스 또는 마이너스 버튼을 누를때마다 수량이 바뀌고 총합 가격도 바뀌어야 함.
