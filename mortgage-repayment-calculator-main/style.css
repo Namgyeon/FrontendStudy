@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(202, 86%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  height: 65%;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.leftContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px 0 0 15px;
+  background-color: white;
+  flex: 1;
+}
+
+.header {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#reset {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.box3 {
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#won {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  color: hsl(200, 24%, 40%);
+  background-color: hsl(202, 86%, 94%);
+  border-radius: 10px 0 0 10px;
+}
+
+#year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: hsl(200, 24%, 40%);
+  border-radius: 0 10px 10px 0;
+  background-color: hsl(202, 86%, 94%);
+}
+
+#percent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: hsl(200, 24%, 40%);
+  border-radius: 0 10px 10px 0;
+  background-color: hsl(202, 86%, 94%);
+}
+
+.para {
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(203, 41%, 72%);
+}
+
+.box {
+  margin: 20px 0px;
+  display: flex;
+  gap: 30px;
+}
+
+.box2 {
+  flex: 1;
+}
+
+#amountInput {
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+#termInput {
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+#rateInput {
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+#rateInput {
+  width: 100%;
+}
+
+.check {
+  margin: 5px 0px;
+  width: 100%;
+  height: 10%;
+  font-weight: 800;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid black;
+}
+
+#btn {
+  margin-top: 15px;
+  width: 60%;
+  height: 10%;
+  font-weight: 800;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(61, 70%, 52%);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.rightContainer {
+  padding: 20px;
+  flex: 1;
+  display: none;
+
+  flex-direction: column;
+  border-radius: 0px 15px 15px 50px;
+  color: white;
+  background-color: hsl(202, 55%, 16%);
+}
+
+.rightContainer .para {
+  margin: 20px 0px;
+}
+
+.resultBox {
+  padding-left: 15px;
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  border-top: 2px solid yellow;
+  border-radius: 15px;
+}
+
+label {
+  height: 50px;
+}
+
+.resultBox .para {
+  margin: 10px 0;
+}
+
+hr {
+  margin-top: 5px;
+  height: 1px;
+  border: 0;
+  background: hsl(200, 24%, 40%);
+}
+
+#repayValue {
+  font-size: 28px;
+  color: hsl(61, 70%, 52%);
+}
+
+.beforeRightContainer {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 15px 15px 50px;
+  color: white;
+  background-color: hsl(202, 55%, 16%);
+}
