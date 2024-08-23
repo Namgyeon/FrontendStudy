@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(148, 38%, 91%);
+  font-family: "Karla", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 30px;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.nameContainer {
+  margin: 10px 0;
+  display: flex;
+}
+
+.nameBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nameBox:nth-child(1) {
+  margin-right: 10px;
+}
+
+input {
+  margin: 5px 0;
+  height: 35px;
+  border-radius: 10px;
+}
+
+label {
+  color: hsl(187, 24%, 22%);
+}
+
+.nameInput {
+  width: 100%;
+}
+
+.emailBox {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.typeContainer {
+  display: flex;
+}
+
+.typeBox {
+  margin: 10px 0;
+  width: 50%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.typeBox:nth-child(1) {
+  margin-right: 10px;
+}
+
+.type {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.messageBox {
+  display: flex;
+  flex-direction: column;
+}
+
+#textarea {
+  height: 60px;
+}
+
+.checkBox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#submit {
+  width: 100%;
+  height: 35px;
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+}

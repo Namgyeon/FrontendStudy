@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1 class="header">Contact Us</h1>
+        <div class="nameContainer">
+          <div class="nameBox">
+            <label for="fname">First Name</label>
+            <input type="text" class="nameInput" id="fname" />
+          </div>
+          <div class="nameBox">
+            <label for="lname">Last Name</label>
+            <input type="text" class="nameInput" id="lname" />
+          </div>
+        </div>
+
+        <div class="emailBox">
+          <label for="email">Email Address</label>
+          <input type="email" />
+        </div>
+
+        <label for="">Query Type</label>
+        <div class="typeContainer">
+          <div class="typeBox">
+            <input type="radio" class="type" id="ftype" name="type" />
+            <label for="ftype">General Enquiry</label>
+          </div>
+          <div class="typeBox">
+            <input type="radio" class="type" id="ltype" name="type" />
+            <label for="ltype">Support Request</label>
+          </div>
+        </div>
+        <div class="messageBox">
+          <label for="textarea">Message</label>
+          <input type="textarea" id="textarea" rows="5" />
+        </div>
+
+        <div class="checkBox">
+          <input type="checkbox" id="check" />
+          <label for="check">I consent to being contacted by the team</label>
+        </div>
+
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
