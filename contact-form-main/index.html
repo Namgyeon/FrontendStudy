@@ -40,41 +40,63 @@
           <div class="nameBox">
             <label for="fname">First Name</label>
             <input type="text" class="nameInput" id="fname" />
+            <div class="name-error-message">This field is required</div>
           </div>
           <div class="nameBox">
             <label for="lname">Last Name</label>
             <input type="text" class="nameInput" id="lname" />
+            <div class="name-error-message">This field is required</div>
           </div>
         </div>
 
         <div class="emailBox">
           <label for="email">Email Address</label>
-          <input type="email" />
+          <input type="email" id="email" />
+          <div id="email-error-message">Please enter a valid email address</div>
         </div>
 
         <label for="">Query Type</label>
         <div class="typeContainer">
-          <div class="typeBox">
-            <input type="radio" class="type" id="ftype" name="type" />
-            <label for="ftype">General Enquiry</label>
+          <div class="typeContainer2">
+            <div class="typeBox" id="leftTypeBox">
+              <input type="radio" class="type" id="ftype" name="type" />
+              <label for="ftype" class="typeLabel">General Enquiry</label>
+            </div>
+            <div class="typeBox" id="rightTypeBox">
+              <input type="radio" class="type" id="ltype" name="type" />
+              <label for="ltype" class="typeLabel">Support Request</label>
+            </div>
           </div>
-          <div class="typeBox">
-            <input type="radio" class="type" id="ltype" name="type" />
-            <label for="ltype">Support Request</label>
-          </div>
+          <div id="type-error-message">Please select a query type</div>
         </div>
         <div class="messageBox">
           <label for="textarea">Message</label>
           <input type="textarea" id="textarea" rows="5" />
+          <div id="message-error-message">This field is required</div>
         </div>
 
         <div class="checkBox">
-          <input type="checkbox" id="check" />
-          <label for="check">I consent to being contacted by the team</label>
+          <div class="checkContainer">
+            <input type="checkbox" id="check" />
+            <label for="check" id="check"
+              >I consent to being contacted by the team</label
+            >
+          </div>
+          <div id="check-error-message">
+            To submit this form, please consent to being contacted
+          </div>
         </div>
 
-        <input type="submit" id="submit" value="Submit" />
+        <input type="button" id="submit" value="Submit" />
       </form>
     </div>
+    <div class="successfulSubmit">
+      <div class="sentBox">
+        <img src="./assets/images/icon-success-check.svg" alt="" />
+        <p>Message Sent!</p>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
