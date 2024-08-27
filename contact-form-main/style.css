@@ -175,3 +175,35 @@ label {
   align-items: center;
   gap: 10px;
 }
+
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+  }
+
+  .nameContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nameBox {
+    width: 100%;
+  }
+
+  .typeContainer2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .typeBox {
+    width: 100%;
+  }
+
+  .successfulSubmit {
+    width: 200px;
+    height: 50px;
+  }
+}
