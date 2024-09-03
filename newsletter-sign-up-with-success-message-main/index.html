@@ -49,7 +49,10 @@
         </ul>
         <form action="">
           <div class="emailBox">
-            <label for="email" id="emailLabel">Email address</label>
+            <div id="emailBox2">
+              <label for="email" id="emailLabel">Email address</label>
+              <p id="errorMessage">Valid email required</p>
+            </div>
             <input type="email" id="email" placeholder="email@company.com" />
           </div>
 
@@ -72,11 +75,18 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-
-    <!-- Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message -->
+    <div class="subscribeContainer">
+      <img src="./assets/images/icon-success.svg" alt="" />
+      <h1 id="header2">Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <strong>ash@loremcompany.com</strong>. Please open it and click the
+        button inside to confirm your subscription.
+      </p>
+      <button id="btn2">Dismiss message</button>
+    </div>
 
     <!-- Success message end -->
+    <script src="/index.js"></script>
   </body>
 </html>
