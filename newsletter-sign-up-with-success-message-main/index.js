@@ -1,10 +1,11 @@
-const email = document.querySelector("#email");
 const submit = document.querySelector("#submit");
-const errorMessage = document.querySelector("#errorMessage");
-const container = document.querySelector(".container");
-const subscribeContainer = document.querySelector(".subscribeContainer");
+function checkEmailValid(e) {
+  const email = document.querySelector("#email");
 
-submit.addEventListener("click", (e) => {
+  const errorMessage = document.querySelector("#errorMessage");
+  const container = document.querySelector(".container");
+  const subscribeContainer = document.querySelector(".subscribeContainer");
+
   emailValid = false;
   e.preventDefault();
 
@@ -23,4 +24,21 @@ submit.addEventListener("click", (e) => {
     container.style.display = "none";
     subscribeContainer.style.display = "block";
   }
-});
+}
+
+submit.addEventListener("click", checkEmailValid);
+
+function checkScreenSize() {
+  const Img = document.querySelector("#img");
+  const mobileImg = document.querySelector("#mobileImg");
+
+  if (window.innerWidth < 375) {
+    Img.style.display = "none";
+    mobileImg.style.display = "inline";
+  } else {
+    Img.style.display = "inline";
+    mobileImg.style.display = "none";
+  }
+}
+
+window.addEventListener("resize", checkScreenSize);

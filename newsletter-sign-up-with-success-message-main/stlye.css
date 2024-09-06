@@ -137,3 +137,42 @@ p {
 input.email-error {
   color: red;
 }
+
+#mobileImg {
+  display: none;
+}
+
+.mobileSubscribeContainer {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-color: white;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .leftContainer {
+    flex: 1;
+    padding: 15px;
+  }
+
+  .rightContainer {
+    flex: 1;
+    width: 100%;
+    height: 70%;
+  }
+
+  #img {
+    width: 100%; /* 너비를 100%로 설정 */
+    height: auto; /* 자동으로 비율 유지 */
+    max-height: 100%; /* 최대 높이를 100%로 설정하여 컨테이너를 넘지 않도록 */
+    object-fit: cover; /* 비율 유지하여 전체 보이도록 설정 */
+  }
+}
