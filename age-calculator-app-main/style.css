@@ -16,7 +16,7 @@ body {
 
 .container {
   width: 50%;
-  height: 60%;
+  height: 65%;
   padding: 30px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 15px 15px 25% 15px;
@@ -50,6 +50,13 @@ input::placeholder {
   color: hsl(0, 1%, 44%);
 }
 
+.errorMessage {
+  display: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
+}
+
 #line {
   display: flex;
   align-items: center;
@@ -69,6 +76,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.arrowContainer:hover {
+  background-color: black;
 }
 
 #arrowImg {
@@ -78,7 +90,7 @@ hr {
 
 p,
 .para {
-  font-size: 46px;
+  font-size: 40px;
   font-weight: 700;
 }
 
