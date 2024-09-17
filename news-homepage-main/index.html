@@ -33,9 +33,11 @@
     </style>
   </head>
   <body>
+    <div class="overlay"></div>
     <div class="container">
       <div class="header">
         <img src="./assets/images/logo.svg" alt="" />
+
         <div class="menu">
           <a href="#" class="text menuText">Home</a>
           <a href="#" class="text menuText">New</a>
@@ -43,9 +45,31 @@
           <a href="#" class="text menuText">Trending</a>
           <a href="#" class="text menuText">Categories</a>
         </div>
+        <img id="MenuIcon" src="./assets/images/icon-menu.svg" alt="" />
+        <div class="mobileMenu">
+          <div id="mobileMenuScreen">
+            <img
+              id="mobileMenuClose"
+              src="./assets/images/icon-menu-close.svg"
+              alt=""
+            />
+            <div class="moblieMenuBox">
+              <a href="#" class="mobileMenuText">Home</a>
+              <a href="#" class="mobileMenuText">New</a>
+              <a href="#" class="mobileMenuText">Popular</a>
+              <a href="#" class="mobileMenuText">Trending</a>
+              <a href="#" class="mobileMenuText">Categories</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="content">
         <img id="one" src="/assets/images/image-web-3-desktop.jpg" alt="" />
+        <img
+          id="oneMobile"
+          src="./assets/images/image-web-3-mobile.jpg"
+          alt=""
+        />
         <div id="two">The Bright Future of Web 3.0?</div>
         <div id="three">
           <p class="text">
@@ -118,5 +142,6 @@
         </div>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
