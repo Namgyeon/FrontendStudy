@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="box1">
+          <p id="notification">Notifications</p>
+          <p id="num">0</p>
+        </div>
+
+        <p id="mark">Mark all as read</p>
+      </div>
+      <div class="comment">
+        <img src="./assets/images/avatar-mark-webber.webp" alt="" />
+        <div class="box2">
+          <div class="box3">
+            <p id="name">Mark Webber</p>
+            <p>reacted to your recent post My first tournament today!</p>
+          </div>
+          <p id="time">1m ago</p>
+        </div>
+      </div>
+      <div class="comment">
+        <img src="./assets/images/avatar-angela-gray.webp" alt="" />
+        <div class="box2">
+          <div class="box3">
+            <p id="name">Angela Gray</p>
+            <p>followed you</p>
+          </div>
+          <p id="time">5m ago</p>
+        </div>
+      </div>
+      <div class="comment">
+        <img src="./assets/images/avatar-jacob-thompson.webp" alt="" />
+        <div class="box2">
+          <div class="box3">
+            <p id="name">Jacob Thompson</p>
+            <p>has joined your group Chess Club</p>
+          </div>
+          <p id="time">1 day ago</p>
+        </div>
+      </div>
+      <div class="comment read">
+        <div class="box2">
+          <div class="box3">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+            <div class="box4">
+              <div class="box5">
+                <p id="name">Rizky Hasanuddin</p>
+                <p>sent you a private message</p>
+              </div>
+              <p id="time">5 days ago</p>
+            </div>
+          </div>
+          <div id="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div>
+        </div>
+      </div>
+      <div class="comment read">
+        <img src="./assets/images/avatar-kimberly-smith.webp" alt="" />
+        <div class="box2">
+          <div class="box3">
+            <p id="name">Kimberly Smith</p>
+            <p>commented on your picture</p>
+          </div>
+          <p id="time">week ago</p>
+        </div>
+      </div>
+      <div class="comment read">
+        <img src="./assets/images/avatar-nathan-peterson.webp" alt="" />
+        <div class="box2">
+          <div class="box3">
+            <p id="name">Nathan Peterson</p>
+            <p>
+              reacted to your recent post 5 end-game strategies to increase your
+              win rate
+            </p>
+          </div>
+          <p id="time">2 weeks ago</p>
+        </div>
+      </div>
+      <div class="comment read">
+        <img src="./assets/images/avatar-anna-kim.webp" alt="" />
+        <div class="box2">
+          <div class="box3">
+            <p id="name">Anna Kim</p>
+            <p>left the group Chess Club</p>
+          </div>
+          <p id="time">2 weeks ago</p>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

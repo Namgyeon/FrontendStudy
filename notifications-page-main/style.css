@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(211, 68%, 94%);
+}
+
+.container {
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#notification {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#num {
+  display: block;
+  width: 25px;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  border-radius: 5px;
+}
+
+#mark {
+  font-size: 14px;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+}
+
+.comment {
+  margin: 5px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: hsl(211, 68%, 94%);
+  border-radius: 10px;
+}
+
+img {
+  width: 35px;
+  height: 35px;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box3 {
+  display: flex;
+  gap: 2px;
+}
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.box5 {
+  display: flex;
+}
+
+#name {
+  font-weight: 700;
+}
+
+#time {
+  color: hsl(219, 12%, 42%);
+}
+
+#message {
+  margin: 10px 0;
+  margin-left: 40px;
+  padding: 15px;
+  border: 2px solid hsl(219, 12%, 42%);
+}
+
+.read {
+  background-color: white;
+}
